@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="module">
+      import data from "./data.js";
+      const div = document.getElementById("content");
+
+      div.innerHTML = `
+        ${JSON.stringify(data)}
+        Data contains ${data.length} items`;
+    </script>
+  </head>
+  <body>
+    <div id="content"></div>
+  </body>
+</html>
